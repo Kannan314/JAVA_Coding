@@ -12,11 +12,8 @@
 //  For each test case, output on a new line the maximum total number of colors (both primary and secondary) you can have using the given primary colors.
 
 package Project;
-
 import java.util.Scanner;
-
 public class Demo {
-
 	public static int colors(int red, int green, int blue) {
 		int primary = 0;
 		int secondary = 0;
@@ -49,7 +46,6 @@ public class Demo {
 		}
 		return primary + secondary;
 	}
-	
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int size = sc.nextInt();
@@ -60,12 +56,7 @@ public class Demo {
 			int blue = sc.nextInt();
 			res[i] =  colors(red, green, blue);
 		}
-		
 		for(int ans : res)
-			System.out.println(ans);
-
-	
-	
+			System.out.println(ans);	
 	}
-
 }
